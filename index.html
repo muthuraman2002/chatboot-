@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot with Fetch API and Tailwind CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="w-96 bg-white rounded-lg shadow-lg p-4">
+    <div id="chatBox" class="max-h-80 overflow-y-auto mb-4">
+      <div class="chat-message bot-message">Hi there! How can I help you?</div>
+    </div>
+    <div class="flex">
+      <input type="text" id="userInput" class="w-full px-3 py-2 rounded-lg border outline-none">
+      <button onclick="sendMessage()" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
